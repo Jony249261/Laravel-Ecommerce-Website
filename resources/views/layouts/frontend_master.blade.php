@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{asset('frontend')}}/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="{{asset('frontend')}}/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    @yield('custom_css')
+
 </head>
 
 <body>
@@ -334,7 +336,8 @@
     });
 
 </script>
-
+<script src="{{asset('backend')}}/js/printThis.js"></script>
+    @yield('custom_script')
 </body>
 
 </html>
