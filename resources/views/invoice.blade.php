@@ -9,7 +9,7 @@ h1 { font: bold 100% sans-serif; letter-spacing: 0.5em; text-align: center; text
 
 /* table */
 
-table { font-size: 75%; table-layout: fixed; width: 100%; }
+table { font-size: 16px !important; table-layout: fixed; width: 100%; }
 table { border-collapse: separate; border-spacing: 2px; }
 th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: center; }
 th, td { border-radius: 0.25em; border-style: solid; }
@@ -63,7 +63,7 @@ table.inventory th:first-child {
 table.inventory th:nth-child(2) {
 	width:300px;
 }
-table.inventory th { font-weight: bold; text-align: center; }
+table.inventory th { font-weight: bold; text-align: center; font-size:18px !important}
 
 table.inventory td:nth-child(1) { width: 26%; }
 table.inventory td:nth-child(2) { width: 38%; }
@@ -193,7 +193,7 @@ table.sign tr td {
 				<p> Address: {{$shipping->shipping_address}}</p>
 			</address>
 			
-			<table class="meta">
+			<table class="meta" >
 				<tr>
 					<th><span >Invoice #</span></th>
 					<td><span >{{$order->invoice_no}}</span></td>
